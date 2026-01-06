@@ -1,0 +1,60 @@
+.app {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 16px 22px;
+  display: grid;
+  gap: 14px;
+}
+
+.appHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brandTitle {
+  font-size: 18px;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  color: rgba(15, 23, 42, 0.92);
+}
+
+.brandSubtitle {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.headerActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgba(15, 23, 42, 0.9);
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.btnGhost {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.appMain {
+  width: 100%;
+}
+
+.gameStage {
+  width: 100%;
+}
