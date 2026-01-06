@@ -1,0 +1,212 @@
+﻿Product Requirements Document (PRD)
+Product Name: Lane Runner (Working Title)
+1. Overview
+Lane Runner is a native web-based car game built using React. The player controls a car that moves across four columns (lanes) to avoid obstacles. The game progressively becomes more challenging over time and offers multiple cars, difficulty levels, and responsive controls via mouse clicks and keyboard input.
+________________
+
+
+2. Goals & Objectives
+* Deliver a fast, responsive, and visually comfortable web game experience.
+
+* Provide intuitive controls that work for both keyboard and mouse users.
+
+* Offer increasing difficulty to keep players engaged.
+
+* Ensure accessibility and visual clarity to avoid eye strain.
+
+________________
+
+
+3. Target Audience
+   * Casual gamers
+
+   * Desktop and laptop users
+
+   * Users seeking short, skill-based gameplay sessions
+
+________________
+
+
+4. Platform & Technology
+      * Platform: Web (Desktop-first)
+
+      * Framework: React (functional components & hooks)
+
+      * Rendering: HTML5 Canvas or DOM-based animations (implementation choice)
+
+      * Controls: Keyboard + Mouse
+
+      * Browser Support: Modern browsers (Chrome, Firefox, Edge, Safari)
+
+________________
+
+
+5. Core Gameplay Mechanics
+5.1 Game Layout
+         * The game screen is divided into 4 vertical columns (lanes).
+
+         * The car occupies one column at a time.
+
+         * Obstacles appear and move toward the player.
+
+5.2 Player Actions
+The car must support the following actions:
+            * Move Left / Right: Switch between columns
+
+            * Jump: Jump over low obstacles
+
+            * Slide: Slide under high obstacles
+
+5.3 Controls
+               * Arrow Keys
+
+                  * Left Arrow: Move left
+
+                  * Right Arrow: Move right
+
+                  * Up Arrow: Jump
+
+                  * Down Arrow: Slide
+
+                     * Mouse Input
+
+                        * Clicking on a column moves the car to that column
+
+________________
+
+
+6. Difficulty Levels
+Users can select a difficulty level before starting the game:
+Difficulty
+	Initial Speed
+	Obstacle Frequency
+	Easy
+	Slow
+	Low
+	Medium
+	Moderate
+	Medium
+	Hard
+	Fast
+	High
+	________________
+
+
+7. Progressive Difficulty Scaling
+                           * Game speed increases automatically the longer the player survives.
+
+                           * Obstacle spawn rate increases over time.
+
+                           * No maximum speed cap (or a very high cap) to encourage high-skill play.
+
+________________
+
+
+8. Car Selection
+                              * Multiple car options available before starting the game.
+
+                              * Cars differ visually only (no gameplay advantage).
+
+                              * Selection persists for the duration of the session.
+
+________________
+
+
+9. User Interface & Visual Design
+9.1 Visual Style
+                                 * Clean, minimal design
+
+                                 * Soft colors with high contrast for visibility
+
+                                 * No harsh or overly bright colors
+
+                                 * Smooth animations and transitions
+
+9.2 Readability & Accessibility
+                                    * Clear obstacle visibility
+
+                                    * Large, readable UI elements
+
+                                    * Color choices considerate of color-blind users
+
+                                    * Avoid flashing elements
+
+________________
+
+
+10. Game States
+                                       * Start Screen
+
+                                          * Car selection
+
+                                          * Difficulty selection
+
+                                          * Start button
+
+                                             * Gameplay
+
+                                             * Pause Screen
+
+                                             * Game Over Screen
+
+                                                * Score displayed
+
+                                                * Restart option
+
+________________
+
+
+11. Scoring System
+                                                   * Score increases based on:
+
+                                                      * Time survived
+
+                                                      * Distance traveled
+
+                                                         * Optional future extension: leaderboard
+
+________________
+
+
+12. Performance Requirements
+                                                            * Smooth gameplay at 60 FPS
+
+                                                            * Minimal input latency
+
+                                                            * Efficient React state updates to avoid unnecessary re-renders
+
+________________
+
+
+13. Analytics & Metrics (Optional)
+                                                               * Session duration
+
+                                                               * Average survival time
+
+                                                               * Difficulty selection frequency
+
+                                                               * Car selection popularity
+
+________________
+
+
+14. Out of Scope (Initial Release)
+                                                                  * Multiplayer mode
+
+                                                                  * Power-ups
+
+                                                                  * In-game purchases
+
+                                                                  * Mobile touch optimization (can be future enhancement)
+
+________________
+
+
+15. Success Criteria
+                                                                     * Players can understand controls within the first 10 seconds
+
+                                                                     * Smooth difficulty ramp without frustration
+
+                                                                     * Visually comfortable experience
+
+                                                                     * Stable performance across supported browsers
